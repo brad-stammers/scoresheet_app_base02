@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Batting team:</strong>
+  <%= @batting.batting_team %>
+</p>
+
+<p>
+  <strong>Overs:</strong>
+  <%= @batting.overs %>
+</p>
+
+<p>
+  <strong>Runs:</strong>
+  <%= @batting.runs %>
+</p>
+
+<p>
+  <strong>Wickets:</strong>
+  <%= @batting.wickets %>
+</p>
+
+<p>
+  <strong>Byes:</strong>
+  <%= @batting.byes %>
+</p>
+
+<p>
+  <strong>Leg byes:</strong>
+  <%= @batting.leg_byes %>
+</p>
+
+<p>
+  <strong>Inning:</strong>
+  <%= @batting.inning_id %>
+</p>
+
+<%= link_to 'Edit', edit_batting_path(@batting) %> |
+<%= link_to 'Back', inning_battings_path(@batting.inning_id) %>

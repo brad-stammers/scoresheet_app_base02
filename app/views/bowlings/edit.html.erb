@@ -1,0 +1,6 @@
+<h1>Editing Bowling</h1>
+
+<%= render 'form', bowling: @bowling %>
+
+<%= link_to 'Show', @bowling %> |
+<%= link_to 'Back', inning_bowlings_path(@bowling.inning_id) %>

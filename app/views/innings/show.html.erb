@@ -1,0 +1,66 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Home:</strong>
+  <%= @inning.home %>
+</p>
+
+<p>
+  <strong>Away:</strong>
+  <%= @inning.away %>
+</p>
+
+<p>
+  <strong>Ground:</strong>
+  <%= @inning.ground %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @inning.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @inning.end_date %>
+</p>
+
+<p>
+  <strong>Competition:</strong>
+  <%= @inning.competition %>
+</p>
+
+<p>
+  <strong>Round:</strong>
+  <%= @inning.round %>
+</p>
+
+<p>
+  <strong>Umpire 01:</strong>
+  <%= @inning.umpire_01 %>
+</p>
+
+<p>
+  <strong>Umpire 02:</strong>
+  <%= @inning.umpire_02 %>
+</p>
+
+<p>
+  <strong>Batting team:</strong>
+  <%= @inning.batting_team %>
+</p>
+
+<p>
+  <strong>Bowling team:</strong>
+  <%= @inning.bowling_team %>
+</p>
+
+<p>
+  <strong>Inning no:</strong>
+  <%= @inning.inning_no %>
+</p>
+
+<%= link_to 'Edit', edit_inning_path(@inning) %> |
+<%= link_to 'Back', innings_path %>
+<%= link_to 'New Batting', new_inning_batting_path(@inning.id) %>
+<%= link_to 'New Bowling', new_inning_bowling_path(@inning.id) %>
